@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>  <style>
+body{
+  margin:0;
+}
 #active {
   color:red;
 }
@@ -13,32 +16,56 @@
     h1 {
       font-size:45px;
       text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
     }
+    ol{
+  border-right:1px solid gray;
+  width:100px;
+  margin:0;
+  padding:20px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol{
+  padding-left:33px;
+}
+#grid #article{
+  padding-left:25px;
+}
   </style><title>Web coding</title>
 <meta charset="utf-8"></head>
 <body>
     <h1><a href="index.html">인명사전</a></h1>
+        <div id="grid">
 <ol>
   <li><a href="1.html" class="saw">나민수</a></li>
   <li><a href="2.html" class="saw" id="active">김민철</a></li>
   <li><a href="3.html">김인범</a></li>
     <li><a href="4.html">김대석</a></li>
 </ol>
-참여자 목록
 <ul>
+  <참여자 목록>
   <li> 나민수 </li>
   <li> 김민철 </li>
   <li> 김인범 </li>
   <li> 김대석 </li>
 </ul>
-  <h2>김민철</h2>
-  <p>
-  사회복무요원 중인 병신 23살</p>
-  <p>
-  복무지 탈출을 위해 오늘도 그는 코딩을 공부한다.
+
+</div>
+<div>
+<h2>김민철</h2>
+<p>
+사회복무요원 중인 병신 23살</p>
+<p>
+복무지 탈출을 위해 오늘도 그는 코딩을 공부한다.
     코딩을 배우고 가짜 웹 서버를 호스팅해서 낚인 사람들의 개인정보와 금전을 취득하려는 목적으로 코딩을 공부하기시작했다.
-  </p>
-  <img src ="kim.jpg" width="35%">
-  </p><p style="margin-top:45px;">
+</p>
+<img src ="kim.jpg" width="35%">
+</p><p style="margin-top:45px;">
+</div>
 </body>
 </html>
