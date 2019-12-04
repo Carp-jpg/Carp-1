@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>  <style>
+body{
+  margin:0;
+}
 #active {
   color:red;
 }
@@ -13,43 +16,67 @@
     h1 {
       font-size:45px;
       text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
     }
+    ol{
+  border-right:1px solid gray;
+  width:100px;
+  margin:0;
+  padding:20px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol{
+  padding-left:33px;
+}
+#grid #article{
+  padding-left:25px;
+}
   </style><title>Web coding</title>
 <meta charset="utf-8"></head>
 <body>
     <h1><a href="index.html">인명사전</a></h1>
+        <div id="grid">
 <ol>
   <li><a href="1.html" class="saw">나민수</a></li>
   <li><a href="2.html" class="saw" id="active">김민철</a></li>
   <li><a href="3.html">김인범</a></li>
     <li><a href="4.html">김대석</a></li>
 </ol>
-참여자 목록
 <ul>
+  <참여자 목록>
   <li> 나민수 </li>
   <li> 김민철 </li>
   <li> 김인범 </li>
   <li> 김대석 </li>
 </ul>
-  <h2>김인범</h2>
-  <p>
+
+</div>
+<div>
+<h2>김인범</h2>
+<p>
 <a>  반지하 범비토 <strong>전라남도 순천 출신</strong> 23세 가천대학교 글로벌경제학과 재학중.주민번호 뒷자리 16으로 시작함. 맨날 친구들 뒷통수를 치고 매크로 답변을 즐겨함</a>
 </p>
-  <style>
-  strong{
-    border:5px solid red;
-    padding:2px;
-    margin:2px;
-    width:10px;
-  }
-  </style>
-  <img src ="banjiha.jpg" width="65%">
-  </p><p style="margin-top:45px;">
-    <h1> 당신은 환술에 걸릴 수 있습니다! 환술에 걸리면 자동으로 아래 계좌에 돈을 입금하게됩니다.</h1>
-  <img src ="donate.jpg" width="55%">
-  </p><p style="margin-top:45px;">
-    <h1> 또는 잠에 빠집니다.</h1>
-  <img src ="sleep.jpg" width="55%">
-  </p><p style="margin-top:45px;">
+<style>
+strong{
+  border:5px solid red;
+  padding:2px;
+  margin:2px;
+  width:10px;
+}
+</style>
+<img src ="banjiha.jpg" width="65%">
+</p><p style="margin-top:45px;">
+  <h1> 당신은 환술에 걸릴 수 있습니다! 환술에 걸리면 자동으로 아래 계좌에 돈을 입금하게됩니다.</h1>
+<img src ="donate.jpg" width="55%">
+</p><p style="margin-top:45px;">
+  <h1> 또는 잠에 빠집니다.</h1>
+<img src ="sleep.jpg" width="55%">
+</p><p style="margin-top:45px;">
+</div>
 </body>
 </html>
