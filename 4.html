@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>  <style>
+body{
+  margin:0;
+}
 #active {
   color:red;
 }
@@ -13,31 +16,54 @@
     h1 {
       font-size:45px;
       text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
     }
+    ol{
+  border-right:1px solid gray;
+  width:100px;
+  margin:0;
+  padding:20px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol{
+  padding-left:33px;
+}
+#grid #article{
+  padding-left:25px;
+}
   </style><title>Web coding</title>
 <meta charset="utf-8"></head>
 <body>
     <h1><a href="index.html">인명사전</a></h1>
+        <div id="grid">
 <ol>
   <li><a href="1.html" class="saw">나민수</a></li>
   <li><a href="2.html" class="saw" id="active">김민철</a></li>
   <li><a href="3.html">김인범</a></li>
     <li><a href="4.html">김대석</a></li>
 </ol>
-참여자 목록
 <ul>
+  <참여자 목록>
   <li> 나민수 </li>
   <li> 김민철 </li>
   <li> 김인범 </li>
   <li> 김대석 </li>
 </ul>
+</div>
+<div>
 <strong>김대석 <u>경기도 성남 거주</u> 23살</strong>
 <p>
 </p>
-  <li><a href="1.html" class="saw">노민슨</a></li>의 둘도 없는 친구이다.
-  <p>중국을 혐오하는 멋진 사상을 갖고있다.</p>
+<li><a href="1.html" class="saw">노민슨</a></li>의 둘도 없는 친구이다.
+<p>중국을 혐오하는 멋진 사상을 갖고있다.</p>
 <img src ="meo.jpg" width="35%">
 </p><p style="margin-top:45px;">
 페미를 만나면 자리를 스틸당한다.
 </p>
+</div>
 </body>
