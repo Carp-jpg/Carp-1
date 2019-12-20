@@ -7,6 +7,7 @@
 <body>
     <h1><a href="index.html">인명사전</a></h1>
     <div id="grid">
+
 <ol>
   <li><a href="1.html" class="saw">나민수</a></li>
   <li><a href="2.html" class="saw" id="active">김민철</a></li>
@@ -22,8 +23,18 @@
   <li> 김인범 </li>
   <li> 김대석 </li>
 </ul>
+
   <div>
-    <h2>인명사전</h2>
+      <input type="button" value="페이지에게 인사하기" onclick="alert('ㅇㅇ ㅎㅇ')">
+      <input type="button" value="밤" onclick="
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+">
+<input type="button" value="낮" onclick="
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+">
+    <h2 style="background-color:coral;color:powderblue;">인명사전</h2>
     <p>
       연습용으로 애들 인명을 등록하려고 만듦
       <p><h1>HTML</h1>
@@ -32,6 +43,5 @@
     </p>
   </div>
 </div>
-
 </body>
 </html>
