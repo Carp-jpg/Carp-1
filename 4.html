@@ -23,14 +23,30 @@
 </div>
 <div>
   <input type="button" value="페이지에게 인사하기" onclick="alert('ㅇㅇ ㅎㅇ')">
-  <input type="button" value="밤" onclick="
-document.querySelector('body').style.backgroundColor = 'black';
-document.querySelector('body').style.color = 'white';
-">
-<input type="button" value="낮" onclick="
-document.querySelector('body').style.backgroundColor = 'white';
-document.querySelector('body').style.color = 'black';
-">
+  <input id="night_day" type="button" value="night" onclick="
+     var target = document.querySelector('body');
+     if(this.value === 'night'){
+       target.style.backgroundColor = 'black';
+       target.style.color = 'white';
+       this.value = 'day';
+       var alist = document.querySelectorAll('a');
+       var i = 0;
+       while(i < alist.length){
+         alist[i].style.color = 'powderblue';
+         i = i + 1;
+       }
+     } else {
+       target.style.backgroundColor = 'white';
+       target.style.color = 'black';
+       this.value = 'night';
+       var alist = document.querySelectorAll('a');
+       var i = 0;
+       while(i < alist.length){
+         alist[i].style.color = 'blue';
+         i = i + 1;
+       }
+     }
+   ">
 <strong>김대석 <u>경기도 성남 거주</u> 23살</strong>
 <p>
 </p>
@@ -39,6 +55,7 @@ document.querySelector('body').style.color = 'black';
 <img src ="meo.jpg" width="35%">
 </p><p style="margin-top:45px;">
 페미를 만나면 자리를 스틸당한다.
+          43 50 47 64 라는 어떤 암호를 외우고다닌다. 무슨 뜻인지는 아무도 모른다.
 </p>
 </div>
 </body>
