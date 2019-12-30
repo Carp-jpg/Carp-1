@@ -2,6 +2,7 @@
 <html>
 <head><title>Web coding</title>
 <meta charset="utf-8">
+  <script src="colors.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,32 +27,9 @@
 
   <div>
     <input type="button" value="페이지에게 인사하기" onclick="alert('ㅇㅇ ㅎㅇ')">
-    <input id="night_day" type="button" value="밤" onclick="
-       var target = document.querySelector('body');
-       if(this.value === '밤'){
-         target.style.backgroundColor = 'black';
-         target.style.color = 'white';
-         this.value = '낮';
-
-         var alist = document.querySelectorAll('a');
-         var i = 0;
-         while(i < alist.length){
-           alist[i].style.color = 'powderblue';
-           i = i + 1;
-         }
-       } else {
-         target.style.backgroundColor = 'white';
-         target.style.color = 'black';
-         this.value = '밤';
-
-         var alist = document.querySelectorAll('a');
-         var i = 0;
-         while(i < alist.length){
-           alist[i].style.color = 'blue';
-           i = i + 1;
-         }
-       }
-     ">
+    <input id="night_day" type="button" value="night" onclick="
+      nightDayHandler(this);
+    ">
     <h2 style="background-color:coral;color:powderblue;">인명사전</h2>
     <p>
       연습용으로 애들 인명을 등록하려고 만듦
