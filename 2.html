@@ -2,6 +2,7 @@
 <html>
 <head><title>Web coding</title>
 <meta charset="utf-8">
+  <script src="colors.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,31 +26,8 @@
 <div>
   <input type="button" value="페이지에게 인사하기" onclick="alert('ㅇㅇ ㅎㅇ')">
   <input id="night_day" type="button" value="night" onclick="
-     var target = document.querySelector('body');
-     if(this.value === 'night'){
-       target.style.backgroundColor = 'black';
-       target.style.color = 'white';
-       this.value = 'day';
-
-       var alist = document.querySelectorAll('a');
-       var i = 0;
-       while(i < alist.length){
-         alist[i].style.color = 'powderblue';
-         i = i + 1;
-       }
-     } else {
-       target.style.backgroundColor = 'white';
-       target.style.color = 'black';
-       this.value = 'night';
-
-       var alist = document.querySelectorAll('a');
-       var i = 0;
-       while(i < alist.length){
-         alist[i].style.color = 'blue';
-         i = i + 1;
-       }
-     }
-   ">
+    nightDayHandler(this);
+  ">
 <h2>김민철</h2>
 <p>
 사회복무요원 중인 병신 23살</p>
